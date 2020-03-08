@@ -21,7 +21,7 @@
 
   
 
-  <title>分类: 算法 | 你是光</title>
+  <title>flex-block主题 | 你是光</title>
 
   
 
@@ -79,7 +79,7 @@
 
     
 <!-- header container -->
-<header class="header-container">
+<header class="header-container post">
 
   
   
@@ -89,20 +89,30 @@
 
   
   
-    
+
+  
+  
+
+  
+  
     <div class="header-content">
       <div class="post-image" style="background-image: url(https://qiniu.miiiku.xyz/src/images/banner.jpg)"></div>
       <div class="post-text">
-        <h1 class="title-wrap">算法</h1>
-        <h2 class="title-sub-wrap">当前分类下共有1篇文章</h2>
+        <div class="type-wrap">
+          <a class="article-category-link" href="/categories/others/">others</a>
+        </div>
+        <h1 class="title-wrap">flex-block主题</h1>
+        <h2 class="title-sub-wrap">
+          <strong>Westrel Xylographer</strong>
+          <span>发布于</span>
+          
+  <a href="javascript:;" class="article-date">
+    <time datetime="2020-02-03T16:00:00.000Z" itemprop="datePublished">2020-02-04</time>
+  </a>
+
+        </h2>
       </div>
     </div>
-  
-
-  
-  
-
-  
   
 
   
@@ -110,47 +120,62 @@
 
   </header>
 
-    <!-- 分类归档 -->
+    <!-- 文章 -->
 
-<!-- post list container -->
-<div class="body-container float">
-  <div class="content-container article-list">
-    <div class="card-container card-articles">
-      <div class="card-wrap">
-        
-          
-          <div class="card-item img">
-            <article>
-              
-                <div class="card-cover" style="background-image: url(../images/randomgod/touzi.jpg)"></div>
-              
-              
-                <a class="article-link card-link" href="/2020/%E4%B8%8A%E5%B8%9D%E7%9A%84%E6%9A%B4%E5%87%BB%E4%B8%8D%E9%9A%8F%E6%9C%BA.md" itemprop="url"></a>
-              
-              <h2 class="article-title">上帝的暴击不随机</h2>
-              <div class="article-meta">
-                <strong>Westrel Xylographer</strong>
-                <span>发布于</span>
-                
-  <a href="/2020/%E4%B8%8A%E5%B8%9D%E7%9A%84%E6%9A%B4%E5%87%BB%E4%B8%8D%E9%9A%8F%E6%9C%BA.md" class="article-date">
-    <time datetime="2020-02-23T09:26:28.000Z" itemprop="datePublished">2020-02-23</time>
-  </a>
+<!-- 文章内容 -->
 
-              </div>
-              <div class="article-category">
-                <a class="article-category-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
-              </div>
-            </article>
-          </div>
-        
+<div class="body-container">
+  <article class="content-container article-container">
+    <div class="article-content">
+      
+      
+
+      <div class="article-entry">
+        <h1 id="This-is-a-example-draft-file"><a href="#This-is-a-example-draft-file" class="headerlink" title="This is a example draft file"></a>This is a example draft file</h1><h3 id="Use-language-markdown"><a href="#Use-language-markdown" class="headerlink" title="Use language :markdown"></a>Use language :markdown</h3><h3 id="You-can-see-it’s-a-useful-language"><a href="#You-can-see-it’s-a-useful-language" class="headerlink" title="You can see it’s a useful language"></a>You can see it’s a useful language</h3>
       </div>
-    </div>
+
+      <div class="article-footer">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/" rel="tag">#test</a></li></ul>
+      </div>
+
+      <div class="article-navs">
+        
+<nav class="card-container card-article-nav">
+  <div class="card-wrap">
+    
+      <div id="article-nav-newer" class="card-item">
+        <article>
+          
+          <a class="card-link article-nav-link" href="/2020/hello-world.md"></a>
+          <strong class="article-nav-caption">Newer</strong>
+          <p class="article-nav-title">
+            
+              Hello World
+            
+          </p>
+        </article>
+      </div>
+    
+    
   </div>
+</nav>
+
+      </div>
+      
+      
+
+  
+  <div class="valine-container">
+    <div id="valine_thread" class="valine-thread"></div>
+  </div>
+
+  
+  
+
+
+    </div>
+  </article>
 </div>
-
-<!-- page container -->
-
-
 
     <!-- footer container -->
 <footer id="footer" class="footer">

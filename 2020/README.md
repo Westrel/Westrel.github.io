@@ -330,11 +330,27 @@
 <nav class="card-container card-article-nav">
   <div class="card-wrap">
     
-      <div id="article-nav-newer" class="card-item">
+      <div id="article-nav-newer" class="card-item img">
         <article>
           
-          <a class="card-link article-nav-link" href="/2020/"></a>
+            <div class="card-cover" style="background-image: url(../images/wuhan/wuhan_1.jpg)"></div>
+          
+          <a class="card-link article-nav-link" href="/2020/%E6%B1%9F%E5%9F%8E%E5%B0%8F%E6%86%A9%EF%BC%88%E4%B8%8A%EF%BC%89.md"></a>
           <strong class="article-nav-caption">Newer</strong>
+          <p class="article-nav-title">
+            
+              江城小憩（上）
+            
+          </p>
+        </article>
+      </div>
+    
+    
+      <div id="article-nav-older" class="card-item">
+        <article>
+          
+          <a class="card-link article-nav-link" href="/2020/hello-world.md"></a>
+          <strong class="article-nav-caption">Older</strong>
           <p class="article-nav-title">
             
               Hello World
@@ -342,7 +358,6 @@
           </p>
         </article>
       </div>
-    
     
   </div>
 </nav>

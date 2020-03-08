@@ -21,7 +21,7 @@
 
   
 
-  <title>分类: 算法 | 你是光</title>
+  <title>win10变wifi | 你是光</title>
 
   
 
@@ -79,7 +79,7 @@
 
     
 <!-- header container -->
-<header class="header-container">
+<header class="header-container post">
 
   
   
@@ -89,20 +89,30 @@
 
   
   
-    
+
+  
+  
+
+  
+  
     <div class="header-content">
       <div class="post-image" style="background-image: url(https://qiniu.miiiku.xyz/src/images/banner.jpg)"></div>
       <div class="post-text">
-        <h1 class="title-wrap">算法</h1>
-        <h2 class="title-sub-wrap">当前分类下共有1篇文章</h2>
+        <div class="type-wrap">
+          <a class="article-category-link" href="/categories/cmd/">cmd</a>
+        </div>
+        <h1 class="title-wrap">win10变wifi</h1>
+        <h2 class="title-sub-wrap">
+          <strong>Westrel Xylographer</strong>
+          <span>发布于</span>
+          
+  <a href="javascript:;" class="article-date">
+    <time datetime="2020-02-25T14:54:50.000Z" itemprop="datePublished">2020-02-25</time>
+  </a>
+
+        </h2>
       </div>
     </div>
-  
-
-  
-  
-
-  
   
 
   
@@ -110,47 +120,74 @@
 
   </header>
 
-    <!-- 分类归档 -->
+    <!-- 文章 -->
 
-<!-- post list container -->
-<div class="body-container float">
-  <div class="content-container article-list">
-    <div class="card-container card-articles">
-      <div class="card-wrap">
-        
-          
-          <div class="card-item img">
-            <article>
-              
-                <div class="card-cover" style="background-image: url(../images/randomgod/touzi.jpg)"></div>
-              
-              
-                <a class="article-link card-link" href="/2020/%E4%B8%8A%E5%B8%9D%E7%9A%84%E6%9A%B4%E5%87%BB%E4%B8%8D%E9%9A%8F%E6%9C%BA.md" itemprop="url"></a>
-              
-              <h2 class="article-title">上帝的暴击不随机</h2>
-              <div class="article-meta">
-                <strong>Westrel Xylographer</strong>
-                <span>发布于</span>
-                
-  <a href="/2020/%E4%B8%8A%E5%B8%9D%E7%9A%84%E6%9A%B4%E5%87%BB%E4%B8%8D%E9%9A%8F%E6%9C%BA.md" class="article-date">
-    <time datetime="2020-02-23T09:26:28.000Z" itemprop="datePublished">2020-02-23</time>
-  </a>
+<!-- 文章内容 -->
 
-              </div>
-              <div class="article-category">
-                <a class="article-category-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
-              </div>
-            </article>
-          </div>
-        
+<div class="body-container">
+  <article class="content-container article-container">
+    <div class="article-content">
+      
+      
+
+      <div class="article-entry">
+        <p>管理员开启powershell(或者cmd)</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">netsh wlan set hostednetwork mode=allow ssid= key=<br></code></pre></td></tr></table></figure>
+
+<p>ssid是wifi热点名称, key是密码, 不要加空格和引号.</p>
+<p>然后</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">netsh wlan start hostednetwork<br></code></pre></td></tr></table></figure>
+
+<p>理论上你有wifi热点的硬件的话就可以用这个方法强开.</p>
+<p>随后打开你的win10网络连接面板,  右击你的win10联网的那个方式, 在属性-共享栏那一项, 家庭网络连接设置为你刚刚新建的的那个连接(应该叫本地连接*xx之类的, 在网络连接面板能看见), 然后把允许共享选上, 点确定就ok啦~</p>
+<p>暂时不放图了, 以后想起来再放~</p>
+
       </div>
-    </div>
+
+      <div class="article-footer">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cmd/" rel="tag">#cmd</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%91%BD%E4%BB%A4/" rel="tag">#命令</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A1%AC%E4%BB%B6/" rel="tag">#硬件</a></li></ul>
+      </div>
+
+      <div class="article-navs">
+        
+<nav class="card-container card-article-nav">
+  <div class="card-wrap">
+    
+    
+      <div id="article-nav-older" class="card-item img">
+        <article>
+          
+            <div class="card-cover" style="background-image: url(../images/randomgod/touzi.jpg)"></div>
+          
+          <a class="card-link article-nav-link" href="/2020/%E4%B8%8A%E5%B8%9D%E7%9A%84%E6%9A%B4%E5%87%BB%E4%B8%8D%E9%9A%8F%E6%9C%BA.md"></a>
+          <strong class="article-nav-caption">Older</strong>
+          <p class="article-nav-title">
+            
+              上帝的暴击不随机
+            
+          </p>
+        </article>
+      </div>
+    
   </div>
+</nav>
+
+      </div>
+      
+      
+
+  
+  <div class="valine-container">
+    <div id="valine_thread" class="valine-thread"></div>
+  </div>
+
+  
+  
+
+
+    </div>
+  </article>
 </div>
-
-<!-- page container -->
-
-
 
     <!-- footer container -->
 <footer id="footer" class="footer">

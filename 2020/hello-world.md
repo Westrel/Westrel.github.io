@@ -21,7 +21,7 @@
 
   
 
-  <title>分类: 算法 | 你是光</title>
+  <title>Hello World | 你是光</title>
 
   
 
@@ -79,7 +79,7 @@
 
     
 <!-- header container -->
-<header class="header-container">
+<header class="header-container post">
 
   
   
@@ -89,20 +89,30 @@
 
   
   
-    
+
+  
+  
+
+  
+  
     <div class="header-content">
       <div class="post-image" style="background-image: url(https://qiniu.miiiku.xyz/src/images/banner.jpg)"></div>
       <div class="post-text">
-        <h1 class="title-wrap">算法</h1>
-        <h2 class="title-sub-wrap">当前分类下共有1篇文章</h2>
+        <div class="type-wrap">
+          <a class="article-category-link" href="/categories/others/">others</a>
+        </div>
+        <h1 class="title-wrap">Hello World</h1>
+        <h2 class="title-sub-wrap">
+          <strong>Westrel Xylographer</strong>
+          <span>发布于</span>
+          
+  <a href="javascript:;" class="article-date">
+    <time datetime="2020-02-03T16:00:00.000Z" itemprop="datePublished">2020-02-04</time>
+  </a>
+
+        </h2>
       </div>
     </div>
-  
-
-  
-  
-
-  
   
 
   
@@ -110,47 +120,88 @@
 
   </header>
 
-    <!-- 分类归档 -->
+    <!-- 文章 -->
 
-<!-- post list container -->
-<div class="body-container float">
-  <div class="content-container article-list">
-    <div class="card-container card-articles">
-      <div class="card-wrap">
-        
-          
-          <div class="card-item img">
-            <article>
-              
-                <div class="card-cover" style="background-image: url(../images/randomgod/touzi.jpg)"></div>
-              
-              
-                <a class="article-link card-link" href="/2020/%E4%B8%8A%E5%B8%9D%E7%9A%84%E6%9A%B4%E5%87%BB%E4%B8%8D%E9%9A%8F%E6%9C%BA.md" itemprop="url"></a>
-              
-              <h2 class="article-title">上帝的暴击不随机</h2>
-              <div class="article-meta">
-                <strong>Westrel Xylographer</strong>
-                <span>发布于</span>
-                
-  <a href="/2020/%E4%B8%8A%E5%B8%9D%E7%9A%84%E6%9A%B4%E5%87%BB%E4%B8%8D%E9%9A%8F%E6%9C%BA.md" class="article-date">
-    <time datetime="2020-02-23T09:26:28.000Z" itemprop="datePublished">2020-02-23</time>
-  </a>
+<!-- 文章内容 -->
 
-              </div>
-              <div class="article-category">
-                <a class="article-category-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
-              </div>
-            </article>
-          </div>
-        
+<div class="body-container">
+  <article class="content-container article-container">
+    <div class="article-content">
+      
+      
+
+      <div class="article-entry">
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
       </div>
-    </div>
+
+      <div class="article-footer">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/" rel="tag">#test</a></li></ul>
+      </div>
+
+      <div class="article-navs">
+        
+<nav class="card-container card-article-nav">
+  <div class="card-wrap">
+    
+      <div id="article-nav-newer" class="card-item">
+        <article>
+          
+          <a class="card-link article-nav-link" href="/2020/README.md"></a>
+          <strong class="article-nav-caption">Newer</strong>
+          <p class="article-nav-title">
+            
+              Read Me
+            
+          </p>
+        </article>
+      </div>
+    
+    
+      <div id="article-nav-older" class="card-item">
+        <article>
+          
+          <a class="card-link article-nav-link" href="/2020/example.md"></a>
+          <strong class="article-nav-caption">Older</strong>
+          <p class="article-nav-title">
+            
+              flex-block主题
+            
+          </p>
+        </article>
+      </div>
+    
   </div>
+</nav>
+
+      </div>
+      
+      
+
+  
+  <div class="valine-container">
+    <div id="valine_thread" class="valine-thread"></div>
+  </div>
+
+  
+  
+
+
+    </div>
+  </article>
 </div>
-
-<!-- page container -->
-
-
 
     <!-- footer container -->
 <footer id="footer" class="footer">
