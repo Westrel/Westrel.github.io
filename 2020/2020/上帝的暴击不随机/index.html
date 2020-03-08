@@ -96,7 +96,7 @@
   
   
     <div class="header-content">
-      <div class="post-image" style="background-image: url(images/touzi.jpg)"></div>
+      <div class="post-image" style="background-image: url(../../images/randomgod/touzi.jpg)"></div>
       <div class="post-text">
         <div class="type-wrap">
           <a class="article-category-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
@@ -141,7 +141,7 @@
 <p>但是常常事情并不如你所愿，可能你20%的暴击率连续点了对方ADC30下一个暴击也没出，可能对面ADC5%的暴击率点你3下出了两个暴击…（你好非哦~）</p>
 <p>于是你砸鼠标扔键盘，咒骂着游戏公司然后退游。游戏公司当然不希望你做出这种事。于是，为了盈利（其实并不），他们的算法工程师开发出了<b>PRD（Pseudo Random Distribution)机制</b>，专门针对这种经常连续暴击或者连续不暴击的情况。</p>
 <h3 id="PRD机制"><a href="#PRD机制" class="headerlink" title="PRD机制"></a>PRD机制</h3><p>PRD机制出暴击的流程是这样的，首先，有一个你能看见的你的暴击率，比如20%，我们称之为面板暴击率P，而你每次普通攻击的当前暴击率的值为p(n)=c*n，n为距离上一次暴击有几次未暴击，n从1开始计数，而对于每一个固定的面板暴击率P都有一个对应的c值，这个c值通常都是比其P要低的。这样，如果你上一次普攻出了暴击，那么你下一次出暴击的概率就很低；同样的，如果你连续很多次都没有出暴击，那么你下次普攻的暴击率会逐渐上升甚至可能达到100%，这样就避免了连续若干个普攻都出不了暴击的非酋情况。</p>
-<p><img src="images/Cvalue.jpg" alt="C value" title="C值表"></p>
+<p><img src="../../images/randomgod/Cvalue.jpg" alt="C value" title="C值表"></p>
 <p>从表中可以看出，假设你的面板暴击率为20%，对应的C值约为5%，也就是说，你的第一次普攻的暴击率只有5%左右，第二次暴击率就叠加到10%，如果你连续十七八次都没有出暴击，那么下一次的暴击率会接近甚至达到100%，而一旦你出了暴击，下一次你的真实暴击率就又回到了5%。</p>
 <h3 id="python实现-不想看代码的直接略过看结果"><a href="#python实现-不想看代码的直接略过看结果" class="headerlink" title="python实现(不想看代码的直接略过看结果)"></a>python实现(不想看代码的直接略过看结果)</h3><p>有了算法的理论基础，我们来考虑实现它。</p>
 <p>首先我们定义了一个CRIT类，是基础暴击类，等会我们要写一个PRD类和NOMALCRIT普通暴击类都是继承自它。</p>
@@ -192,7 +192,7 @@
 <p>PRD mode ins: {3: 294, 6: 254, 8: 134, 1: 115, 9: 87, 4: 301, 7: 226, 5: 287, 10: 50, 2: 227, 11: 26, 15: 1, 12: 5, 13: 4, 14: 2}</p>
 <p>Nomal mode ins: {6: 140, 18: 8, 5: 147, 1: 374, 2: 315, 13: 25, 9: 60, 4: 188, 3: 274, 15: 19, 12: 41, 7: 97, 10: 52, 11: 54, 19: 8, 25: 5, 14: 23, 17: 11, 8: 70, 32: 1, 30: 1, 16: 19, 22: 4, 27: 2, 29: 3, 26: 2, 24: 1, 21: 3, 20: 4, 34: 2, 37: 1}</p>
 <hr>
-<p><img src="images/bar.png" alt="柱状图" title="PRD与伪随机的对比"></p>
+<p><img src="../../images/randomgod/bar.png" alt="柱状图" title="PRD与伪随机的对比"></p>
 <p>可以看出，伪随机算法的连续暴击的几率非常高，但是也有个别连续二三十次普攻不出暴击的。而对于PRD算法我们可以看到，大多数暴击间隔都在3到7之间，符合我们的期望（1/0.2-1=）4次普攻出一个暴击，并且极少存在间隔12以上的。</p>
 <p>也许对于观众而言，一位选手连续出了三四个暴击逆风翻盘是比赛的吸睛之处，但是对于早已属于体育项目的电子竞技而言，选手的实力才是真正应当被记住的。过欧或过非都有可能会毁掉一支电竞队伍在过去一年来的不懈努力，也是因为这样，才有了PRD算法的诞生。我们应当感谢不断进步的一切，才有了更加公平的世界。</p>
 <p>END（下一篇遥遥无期)</p>
@@ -215,7 +215,7 @@
       <div id="article-nav-newer" class="card-item">
         <article>
           
-          <a class="card-link article-nav-link" href="/2020/win10%E5%8F%98wifi/"></a>
+          <a class="card-link article-nav-link" href="/2020/2020/win10%E5%8F%98wifi/"></a>
           <strong class="article-nav-caption">Newer</strong>
           <p class="article-nav-title">
             
@@ -231,7 +231,7 @@
           
             <div class="card-cover" style="background-image: url(../images/zaishijieshenchudeshijie/1.jpg)"></div>
           
-          <a class="card-link article-nav-link" href="/2020/%E5%9C%A8%E4%B8%96%E7%95%8C%E6%B7%B1%E5%A4%84%E7%9A%84%E4%B8%96%E7%95%8C/"></a>
+          <a class="card-link article-nav-link" href="/2020/2020/%E5%9C%A8%E4%B8%96%E7%95%8C%E6%B7%B1%E5%A4%84%E7%9A%84%E4%B8%96%E7%95%8C/"></a>
           <strong class="article-nav-caption">Older</strong>
           <p class="article-nav-title">
             
