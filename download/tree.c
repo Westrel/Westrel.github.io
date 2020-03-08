@@ -49,6 +49,8 @@ void recursivePostorderTraversal(BinTree* root);
 void noRecursivePreorderTraversal(BinTree* root);
 void noRecursiveMiddleorderTraversal(BinTree* root);
 void noRecursivePostorderTraversal(BinTree* root);
+void connectChild(BinTree* parent, BinTree* lchild, BinTree* rchild);
+void levelTraversal(BinTree* root);
 BinTree *createNewNode(ElementType data);
 
 
@@ -81,11 +83,9 @@ int main(){
 	bt3 = createNewNode(3);
 	bt4 = createNewNode(4);
 	bt5 = createNewNode(5);
-	root->left = bt1;
-	root->right = bt2;
-	bt1->left = bt3;
-	bt1->right = bt4;
-	bt2->left = bt5;
+	connectChild(root, bt1, bt2);
+	connectChild(bt1, bt3, bt4);
+	connectChild(bt2, bt5, NULL);
 	printf("递归先序遍历: ");
 	recursivePreorderTraversal(root);
 	printf("\n");
@@ -103,20 +103,24 @@ int main(){
 	printf("\n");
 	printf("非递归后序遍历: ");
 	noRecursivePostorderTraversal(root);
-//	stack = createSAQ(10);
-//	showSaQData(stack);
-//	pushSAQ(stack, root);
-//	stackPop(stack);
-//	pushSAQ(stack, bt1);
-//	pushSAQ(stack, bt1);
-//	pushSAQ(stack, bt2);
-//	pushSAQ(stack, bt3);
-//	pushSAQ(stack, bt4);
-//	pushSAQ(stack, bt5);
-//	showSaQData(stack);
-//	stackPop(stack);
-//	queuePop(stack);
-//	showSaQData(stack);
+	printf("\n");
+	printf("层序遍历: ");
+	levelTraversal(root);
+	
+	stack = createSAQ(10);
+	showSaQData(stack);
+	pushSAQ(stack, root);
+	stackPop(stack);
+	pushSAQ(stack, bt1);
+	pushSAQ(stack, bt1);
+	pushSAQ(stack, bt2);
+	pushSAQ(stack, bt3);
+	pushSAQ(stack, bt4);
+	pushSAQ(stack, bt5);
+	showSaQData(stack);
+	stackPop(stack);
+	queuePop(stack);
+	showSaQData(stack);
 	return 0;
 }
 
@@ -135,6 +139,14 @@ BinTree *createNewNode(ElementType data){			// 创建二叉树节点
 	node->left = NULL;
 	node->right = NULL;
 	return node;
+}
+
+
+void connectChild(BinTree* parent, BinTree* lchild, BinTree* rchild){// 连接左右节点 
+	if(lchild)
+		parent->left = lchild;
+	if(rchild)
+		parent->right = rchild;
 }
 
 
@@ -245,6 +257,25 @@ void noRecursivePostorderTraversal(BinTree* root){	// 非递归后序遍历二叉树
 }
 
 
+void levelTraversal(BinTree* root){					// 层序遍历二叉树 
+	BinTree *p;
+	SAQ *queue; 
+	if(!root){
+		printf("树为空\n");
+		return;
+	}
+	p = root;
+	queue = createSAQ(-1);
+	pushSAQ(queue, p);
+	while(queue->length){
+		p = queuePop(queue);
+		if(p->left)
+			pushSAQ(queue, p->left);
+		if(p->right)
+			pushSAQ(queue, p->right);
+		printf("%d ", p->data);
+	}
+}
 
 /**
 	双向链表相关函数定义
@@ -343,7 +374,7 @@ BinTree *queuePop(SAQ *saq){						// 队列pop操作
 	if(saq->length == 0){
 		printf("SAQ空");
 		return NULL;
-	}else if(saq->length == 0){
+	}else if(saq->length == 1){
 		p = saq->head;
 		saq->head = NULL;
 		saq->tail = NULL;
