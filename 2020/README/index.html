@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  
+    <meta name="description" content="Designed by Wx">
+  
+
+  
+    <meta name="keywords" content="由列表掉落关键词">
+  
+
+  
+    <meta name="author" content="Westrel Xylographer">
+  
+
+  
+
+  
+
+  <title>Read Me | 你是光</title>
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <link href="https://cdn.bootcss.com/highlight.js/9.15.6/styles/monokai.min.css" rel="stylesheet">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+  <div class="root-container">
+    <!-- navbar -->
+<nav class="navbar">
+  <div class="navbar-content">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <a href="/">
+        
+          你是光
+        
+      </a>
+    </div>
+    <!-- link -->
+    <div class="navbar-link">
+      <div class="navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-list">
+        
+          <li class="navbar-list-item"><a href="/">首页</a></li>
+        
+          <li class="navbar-list-item"><a href="/categories">目录</a></li>
+        
+          <li class="navbar-list-item"><a href="/about">关于</a></li>
+        
+          <li class="navbar-list-item"><a href="/links">友链</a></li>
+        
+          <li class="navbar-list-item"><a href="/tags">标签</a></li>
+        
+          <li class="navbar-list-item"><a href="/messages">留盐</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    
+<!-- header container -->
+<header class="header-container post">
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="header-content">
+      <div class="post-image" style="background-image: url(https://qiniu.miiiku.xyz/src/images/banner.jpg)"></div>
+      <div class="post-text">
+        <div class="type-wrap">
+          <a class="article-category-link" href="/categories/others/">others</a>
+        </div>
+        <h1 class="title-wrap">Read Me</h1>
+        <h2 class="title-sub-wrap">
+          <strong>Westrel Xylographer</strong>
+          <span>发布于</span>
+          
+  <a href="javascript:;" class="article-date">
+    <time datetime="2020-02-03T16:00:00.000Z" itemprop="datePublished">2020-02-04</time>
+  </a>
+
+        </h2>
+      </div>
+    </div>
+  
+
+  
+  
+
+  </header>
+
+    <!-- 文章 -->
+
+<!-- 文章内容 -->
+
+<div class="body-container">
+  <article class="content-container article-container">
+    <div class="article-content">
+      
+      
+
+      <div class="article-entry">
+        <h1 id="flex-block"><a href="#flex-block" class="headerlink" title="flex-block"></a>flex-block</h1><p>一个基于<code>Hexo</code>的主题</p>
+<p>模仿加瞎改<code>Ghost</code>里的一个主题<code>nurui</code></p>
+<h1 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h1><!-- ![cover1](./img/blog1.png) -->
+
+<!-- ![cover2](./img/blog2.png) -->
+
+<!-- ![cover3](./img/blog3.png) -->
+
+<h1 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h1><h4 id="2020-01"><a href="#2020-01" class="headerlink" title="2020.01"></a>2020.01</h4><ul>
+<li><p>修改顶部导航栏</p>
+</li>
+<li><p>header添加栏波浪，来源 <a href="https://github.com/dusign/hexo-theme-snail" target="_blank" rel="noopener">https://github.com/dusign/hexo-theme-snail</a></p>
+</li>
+<li><p>再次修改栏文章内容页面，效果比以前好些</p>
+</li>
+</ul>
+<h4 id="2019-12"><a href="#2019-12" class="headerlink" title="2019.12"></a>2019.12</h4><ul>
+<li><p>优化了若干代码，结构更清晰，修复了几处CSS显示问题</p>
+</li>
+<li><p>修改文章内容显示宽度，和一些标签样式</p>
+</li>
+<li><p>更新了 <strong><code>waterfall</code></strong> (画廊)标签 可设置大小</p>
+</li>
+<li><p>新增 <strong><code>image</code></strong> (图片), <strong><code>bookmark</code></strong> (书签), <strong><code>aplayer</code></strong> 音频播放 标签</p>
+</li>
+</ul>
+<h1 id="变动"><a href="#变动" class="headerlink" title="变动"></a>变动</h1><p>关于 <strong><code>waterfall</code></strong> 标签，在更新主题后，会导致以前的视频不能正常播放，需要进行如下修改:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="xml"><span class="hljs-comment">&lt;!-- 旧版写法 --&gt;</span></span><br>&#123;% dplayer https://qiniu.miiiku.xyz/video/%E7%BE%8E.mp4 https://qiniu.miiiku.xyz/video/%E7%BE%8E.mp4?vframe/jpg/offset/10 %&#125; <br><br><span class="xml"><span class="hljs-comment">&lt;!-- 新版写法 需要指定属性名 --&gt;</span></span><br>&#123;% dplayer url="https://qiniu.miiiku.xyz/video/%E7%BE%8E.mp4" cover="https://qiniu.miiiku.xyz/video/%E7%BE%8E.mp4?vframe/jpg/offset/10" %&#125;<br></code></pre></td></tr></table></figure>
+
+<h1 id="可自定义的相关页面"><a href="#可自定义的相关页面" class="headerlink" title="可自定义的相关页面"></a>可自定义的相关页面</h1><h2 id="目前可以扩展的页面菜单有"><a href="#目前可以扩展的页面菜单有" class="headerlink" title="目前可以扩展的页面菜单有:"></a>目前可以扩展的页面菜单有:</h2><table>
+<thead>
+<tr>
+<th>type</th>
+<th>value</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>categories</td>
+<td>/categories</td>
+<td>分类</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>/tags</td>
+<td>标签</td>
+</tr>
+<tr>
+<td>links</td>
+<td>/links</td>
+<td>友链</td>
+</tr>
+<tr>
+<td>messages</td>
+<td>/messages</td>
+<td>留言板</td>
+</tr>
+</tbody></table>
+<h2 id="如何添加"><a href="#如何添加" class="headerlink" title="如何添加:"></a>如何添加:</h2><p>🌰 添加友链页面</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new page links<br></code></pre></td></tr></table></figure>
+
+<p>找到新建的页面并修改<code>Front-matter</code>，添加如下内容</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">type: links<br></code></pre></td></tr></table></figure>
+
+<p>修改<code>_config.yml</code>配置菜单，找到<code>menu</code>选项添加如下内容</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs avrasm"><span class="hljs-symbol">links:</span> /links<br></code></pre></td></tr></table></figure>
+
+<h2 id="添加其他自定义页面，如关于页面"><a href="#添加其他自定义页面，如关于页面" class="headerlink" title="添加其他自定义页面，如关于页面"></a>添加其他自定义页面，如<code>关于</code>页面</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new page about<br></code></pre></td></tr></table></figure>
+
+<h1 id="Front-matter相关"><a href="#Front-matter相关" class="headerlink" title="Front-matter相关"></a><code>Front-matter</code>相关</h1><h2 id="除开以有的字段，目前有效的相关属性"><a href="#除开以有的字段，目前有效的相关属性" class="headerlink" title="除开以有的字段，目前有效的相关属性"></a>除开以有的<a href="https://hexo.io/zh-cn/docs/front-matter" target="_blank" rel="noopener">字段</a>，目前有效的相关属性</h2><table>
+<thead>
+<tr>
+<th>key</th>
+<th>layout</th>
+<th>desc</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>subtitle</td>
+<td>post,page,draft</td>
+<td>小标题，文章或页面的小标题，文章缺省值为文章的发布时间</td>
+</tr>
+<tr>
+<td>categories</td>
+<td>post,draft</td>
+<td>分类，文章的分类</td>
+</tr>
+<tr>
+<td>cover</td>
+<td>post,page,draft</td>
+<td>封面，文章或页面的封面，banner图</td>
+</tr>
+<tr>
+<td>type</td>
+<td>page</td>
+<td>页面类型，取值详见<strong>可自定义的相关页面</strong></td>
+</tr>
+</tbody></table>
+<p>建议复制以下代码替换<code>scaffolds/</code>下默认的模版</p>
+<h3 id="post-md-draft-md"><a href="#post-md-draft-md" class="headerlink" title="post.md,draft.md"></a>post.md,draft.md</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br>title: &#123;&#123; title &#125;&#125;<br>subtitle:<br>date: &#123;&#123; date &#125;&#125;<br>categories:<br>tags:<br><span class="hljs-section">cover:<br>---</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="page-md"><a href="#page-md" class="headerlink" title="page.md"></a>page.md</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br>title: &#123;&#123; title &#125;&#125;<br>subtitle:<br>date: &#123;&#123; date &#125;&#125;<br>cover:<br><span class="hljs-section">type:<br>---</span><br></code></pre></td></tr></table></figure>
+
+<h1 id="自定义数据"><a href="#自定义数据" class="headerlink" title="自定义数据"></a>自定义数据</h1><h2 id="友链数据"><a href="#友链数据" class="headerlink" title="友链数据"></a>友链数据</h2><p>在目录的<code>source/_data</code>下新建一个<strong>links.yml</strong></p>
+<p>一行一条数据，格式如下:</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-bullet">-</span> <span class="hljs-string">&#123;</span> <span class="hljs-string">"name"</span> <span class="hljs-string">:</span> <span class="hljs-string">""</span><span class="hljs-string">,</span> <span class="hljs-string">"describe"</span> <span class="hljs-string">:</span> <span class="hljs-string">""</span><span class="hljs-string">,</span> <span class="hljs-string">"link"</span> <span class="hljs-string">:</span> <span class="hljs-string">""</span><span class="hljs-string">,</span> <span class="hljs-string">"cover"</span> <span class="hljs-string">:</span> <span class="hljs-string">""</span> <span class="hljs-string">&#125;</span><br></code></pre></td></tr></table></figure>
+
+
+<h1 id="SEO优化相关"><a href="#SEO优化相关" class="headerlink" title="SEO优化相关"></a>SEO优化相关</h1><p><strong>查找并修改<code>Hexo</code>下的<code>_config.yml</code></strong></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># Site</span><br><br><span class="hljs-comment"># &lt;meta name="description" content=[config.description]&gt;</span><br><span class="hljs-attr">description:</span> <br><br><span class="hljs-comment"># &lt;meta name="keywords" content=[config.keywords]&gt;</span><br><span class="hljs-attr">keywords:</span> <br><br><span class="hljs-comment"># &lt;meta name="author" content=[config.author]&gt;</span><br><span class="hljs-attr">author:</span> <br><br><span class="hljs-comment"># &lt;meta name="copyright" content=[config.copyright]&gt;</span><br><span class="hljs-attr">copyright:</span><br></code></pre></td></tr></table></figure>
+
+
+<h1 id="配置项"><a href="#配置项" class="headerlink" title="配置项:"></a>配置项:</h1><h2 id="代码高亮"><a href="#代码高亮" class="headerlink" title="代码高亮"></a>代码高亮</h2><p>hexo默认提供了highlightjs代码高亮，如何开启？</p>
+<p><strong>查找并修改<code>Hexo</code>下的<code>_config.yml</code></strong></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">highlight:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">line_number:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">auto_detect:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">tab_replace:</span><br>  <span class="hljs-attr">hljs:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">theme:</span> <span class="hljs-string">monokai</span><br></code></pre></td></tr></table></figure>
+
+<p>其中<code>enable</code>为开启代码高亮，<code>hljs</code>设置为hljs为class，<code>theme</code>为highlight代码高亮主题，不设置默认为default</p>
+<p>具体的主题可以在<a href="https://highlightjs.org/" target="_blank" rel="noopener">https://highlightjs.org/</a>查看</p>
+<h2 id="长标题"><a href="#长标题" class="headerlink" title="长标题"></a>长标题</h2><p>进入<code>flex-block</code>配置文件<code>_config.yml</code>找到<code>large_legnth</code></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># large cover</span><br><span class="hljs-comment"># long: [article, link]</span><br><span class="hljs-comment"># short: [category, tag]</span><br><span class="hljs-attr">large_legnth:</span><br>  <span class="hljs-attr">long:</span> <span class="hljs-number">20</span><br>  <span class="hljs-attr">short:</span> <span class="hljs-number">5</span><br></code></pre></td></tr></table></figure>
+
+<p><strong>long:</strong> 作用于<code>文章</code>和<code>友链</code>卡片</p>
+<p><strong>short:</strong> 作用于<code>分类</code>和<code>标签</code>卡片</p>
+<p>设置Card封面的大小，如 <code>long: 20</code> 表示如果文章标题长度大于20，文章卡片显示为长文章</p>
+<p><em>如果启用了友链，则会判断<code>友链名称</code>和<code>友链描述</code>两个字段长度</em></p>
+<h2 id="aplayer"><a href="#aplayer" class="headerlink" title="aplayer"></a>aplayer</h2><p>进入<code>flex-block</code>配置文件<code>_config.yml</code>找到<code>aplayer</code></p>
+<p><strong><code>aplayer</code>歌词模式默认使用第三种（文件格式）</strong></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># aplayer 视频播放</span><br><span class="hljs-comment"># docs: https://aplayer.js.org/#/</span><br><span class="hljs-attr">aplayer:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">theme:</span> <span class="hljs-string">"#b7daff"</span><br>  <span class="hljs-attr">autoplay:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">loop:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">mutex:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">lrcType:</span> <span class="hljs-number">3</span><br></code></pre></td></tr></table></figure>
+
+<p>详情查看<a href="https://aplayer.js.org/" target="_blank" rel="noopener">https://aplayer.js.org/</a></p>
+<h2 id="dplayer"><a href="#dplayer" class="headerlink" title="dplayer"></a>dplayer</h2><p>进入<code>flex-block</code>配置文件<code>_config.yml</code>找到<code>dplayer</code></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># dplayer 视频播放</span><br><span class="hljs-comment"># docs: http://dplayer.js.org/</span><br><span class="hljs-attr">dplayer:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">theme:</span> <span class="hljs-string">"#b7daff"</span><br>  <span class="hljs-attr">autoplay:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">loop:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">mutex:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
+
+<p>详情查看<a href="http://dplayer.js.org/" target="_blank" rel="noopener">http://dplayer.js.org/</a></p>
+<h2 id="zoom-图片预览"><a href="#zoom-图片预览" class="headerlink" title="zoom 图片预览"></a>zoom 图片预览</h2><p>进入<code>flex-block</code>配置文件<code>_config.yml</code>找到<code>zoom</code></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># zoom 图片预览</span><br><span class="hljs-comment"># docs: https://github.com/miiiku/zoom</span><br><span class="hljs-comment"># Specific configuration information go to `layout/plug-in/zoom.ejs`</span><br><span class="hljs-attr">zoom:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
+
+<p>详情查看<a href="https://github.com/miiiku/zoom" target="_blank" rel="noopener">https://github.com/miiiku/zoom</a></p>
+<h2 id="waterfall-瀑布流"><a href="#waterfall-瀑布流" class="headerlink" title="waterfall 瀑布流"></a>waterfall 瀑布流</h2><p>进入<code>flex-block</code>配置文件<code>_config.yml</code>找到<code>waterfall</code></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># waterfall 瀑布流</span><br><span class="hljs-comment"># docs: https://github.com/miiiku/waterfall</span><br><span class="hljs-comment"># Specific configuration information go to `layout/plug-in/waterfall.ejs`</span><br><span class="hljs-attr">waterfall:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
+
+<p>如果要进行详细的配置，请找到并编辑<code>layout/plug-in/waterfall.ejs</code></p>
+<p>详情查看<a href="https://github.com/miiiku/waterfall" target="_blank" rel="noopener">https://github.com/miiiku/waterfall</a></p>
+<h2 id="Valine评论"><a href="#Valine评论" class="headerlink" title="Valine评论"></a>Valine评论</h2><p>进入<code>flex-block</code>配置文件<code>_config.yml</code>找到<code>valine</code></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># valine 评论</span><br><span class="hljs-comment"># docs: https://valine.js.org</span><br><span class="hljs-comment"># You can get your appid and appkey from https://leancloud.cn</span><br><span class="hljs-comment"># 这里appId和appKey一定一定要改成自己的，没有的话去https://leancloud.cn这个网站注册创建一个</span><br><span class="hljs-attr">valine:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">appId:</span> <span class="hljs-comment"># your appid</span><br>  <span class="hljs-attr">appKey:</span> <span class="hljs-comment"># your appkey</span><br>  <span class="hljs-attr">avatar:</span> <span class="hljs-string">mm</span><br>  <span class="hljs-attr">placeholder:</span> <span class="hljs-string">随便说点什么叭～</span><br>  <span class="hljs-attr">notify:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">visitor:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">pageSize:</span> <span class="hljs-number">10</span><br></code></pre></td></tr></table></figure>
+
+<p>如果想给某一页面/文章取消评论，在<code>md</code>文件的<code>front-matter</code>中增加<code>comments: false</code></p>
+<p>详情查看<a href="https://valine.js.org/configuration.html" target="_blank" rel="noopener">https://valine.js.org/configuration.html</a></p>
+<h2 id="disqus评论"><a href="#disqus评论" class="headerlink" title="disqus评论"></a>disqus评论</h2><p>进入<code>flex-block</code>配置文件<code>_config.yml</code>找到<code>disqus</code></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># disqus 评论</span><br><span class="hljs-comment"># docs: https://disqus.com/</span><br><span class="hljs-comment"># website 网站到昵称</span><br><span class="hljs-comment"># error 加载失败的提示语</span><br><span class="hljs-attr">disqus:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">website:</span> <span class="hljs-comment"># your website</span><br>  <span class="hljs-attr">error:</span> <span class="hljs-string">如果你看不到评论，那么就真的看不到评论</span> <span class="hljs-string">w(゜Д゜)w</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="一言"><a href="#一言" class="headerlink" title="一言"></a>一言</h2><p>进入<code>flex-block</code>配置文件<code>_config.yml</code>找到<code>hitokoto</code></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># 一言</span><br><span class="hljs-comment"># docs: https://hitokoto.cn/api</span><br><span class="hljs-comment"># type: [a, b, c, d, e, f, g]</span><br><span class="hljs-attr">hitokoto:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">a</span><br></code></pre></td></tr></table></figure>
+
+<p>详情查看<a href="https://hitokoto.cn/api" target="_blank" rel="noopener">https://hitokoto.cn/api</a></p>
+<h1 id="内建标签"><a href="#内建标签" class="headerlink" title="内建标签"></a>内建标签</h1><h2 id="插入视频-aplayer"><a href="#插入视频-aplayer" class="headerlink" title="插入视频 aplayer"></a>插入视频 aplayer</h2><p><strong>更多参数可参考<a href="https://aplayer.js.org/#/home?id=options" target="_blank" rel="noopener">https://aplayer.js.org/#/home?id=options</a>中<code>audio</code>的属性</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="xml"><span class="hljs-comment">&lt;!-- url 必填  --&gt;</span></span><br>&#123;% aplayer name="アイロニ" artist="鹿乃" url="https://qiniu.miiiku.xyz/public/music/鹿乃 - アイロニ.mp3" lrc="https://qiniu.miiiku.xyz/public/music/鹿乃 - アイロニ.lrc" cover="https://qiniu.miiiku.xyz/public/music/鹿乃 - アイロニ.jpg" %&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>注意: 需要开启<code>aplayer</code>插件才能正常使用本内置标签</strong></p>
+<h2 id="插入视频-dplayer"><a href="#插入视频-dplayer" class="headerlink" title="插入视频 dplayer"></a>插入视频 dplayer</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="xml"><span class="hljs-comment">&lt;!-- url 必填 cover 可选 --&gt;</span></span><br>&#123;% dplayer url="https://qiniu.miiiku.xyz/video/%E7%BE%8E.mp4" cover="https://qiniu.miiiku.xyz/video/%E7%BE%8E.mp4?vframe/jpg/offset/10" %&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>注意: 需要开启<code>dplayer</code>插件才能正常使用本内置标签</strong></p>
+<h2 id="插入瀑布流-waterfall"><a href="#插入瀑布流-waterfall" class="headerlink" title="插入瀑布流 waterfall"></a>插入瀑布流 waterfall</h2><p>如需要修改大小 添加参数<code>size=&quot;max&quot;</code></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown">&#123;% waterfall size="max" %&#125;<br>![<span class="hljs-string">imgname</span>](<span class="hljs-link">imgsrc</span>)<br>...<br>&#123;% endwaterfall %&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>更多参数可参考<a href="https://github.com/miiiku/waterfall#options" target="_blank" rel="noopener">https://github.com/miiiku/waterfall#options</a> 原参数的<code>驼峰命名</code>改为<code>横线连接</code></strong></p>
+<p>🌰: 如设置布局为<code>水平布局</code>，每个元素的类名为<code>item-image</code></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown">&#123;% waterfall direction=h item-class=item-image %&#125;<br>![<span class="hljs-string">imgname</span>](<span class="hljs-link">imgsrc</span>)<br>...<br>&#123;% endwaterfall %&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>注意: 需要开启<code>waterfall</code>插件才能正常使用本内置标签</strong></p>
+<h2 id="插入书签-bookmark"><a href="#插入书签-bookmark" class="headerlink" title="插入书签 bookmark"></a>插入书签 bookmark</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="xml"><span class="hljs-comment">&lt;!-- link 地址(必填) title? 标题 cover? 封面 --&gt;</span></span><br>&#123;% bookmark title="我在这里" link="https://miiiku.xyz" cover="https://qiniu.miiiku.xyz/attach/2019/03/15529735091219953<span class="hljs-emphasis">_175322076_</span>H800.jpg" %&#125;<br></code></pre></td></tr></table></figure>
+
+<h2 id="插入图片-image"><a href="#插入图片-image" class="headerlink" title="插入图片 image"></a>插入图片 image</h2><p>如需要修改大小 添加参数<code>size=&quot;max&quot;</code></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="xml"><span class="hljs-comment">&lt;!-- src 地址(必填) title? 描述 size? 大小 --&gt;</span></span><br>&#123;% image src="https://qiniu.miiiku.xyz/attach/2019/03/15529735091219953<span class="hljs-emphasis">_175322076_</span>H800.jpg" title="hello world" size="max" %&#125;<br></code></pre></td></tr></table></figure>
+
+
+
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><h2 id="favicon"><a href="#favicon" class="headerlink" title="favicon"></a>favicon</h2><p>替换掉主题文件下的<code>source/favicon.ico</code></p>
+<h2 id="logo"><a href="#logo" class="headerlink" title="logo"></a>logo</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">logo:</span><br></code></pre></td></tr></table></figure>
+
+<p>高度不超过50，宽度不超过200为最佳</p>
+<h2 id="banner"><a href="#banner" class="headerlink" title="banner"></a>banner</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">banner:</span><br></code></pre></td></tr></table></figure>
+
+<p>宽图为最佳</p>
+<h2 id="统计"><a href="#统计" class="headerlink" title="统计"></a>统计</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">google_analytics:</span> <br><br><span class="hljs-attr">gauges_analytics:</span> <br><br><span class="hljs-attr">baidu_analytics:</span> <br><br><span class="hljs-attr">tencent_analytics:</span><br></code></pre></td></tr></table></figure>
+
+<p>接入常用网站统计第三方</p>
+
+      </div>
+
+      <div class="article-footer">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/" rel="tag">#test</a></li></ul>
+      </div>
+
+      <div class="article-navs">
+        
+<nav class="card-container card-article-nav">
+  <div class="card-wrap">
+    
+      <div id="article-nav-newer" class="card-item img">
+        <article>
+          
+            <div class="card-cover" style="background-image: url(../images/wuhan/wuhan_1.jpg)"></div>
+          
+          <a class="card-link article-nav-link" href="/2020/%E6%B1%9F%E5%9F%8E%E5%B0%8F%E6%86%A9%EF%BC%88%E4%B8%8A%EF%BC%89/"></a>
+          <strong class="article-nav-caption">Newer</strong>
+          <p class="article-nav-title">
+            
+              江城小憩（上）
+            
+          </p>
+        </article>
+      </div>
+    
+    
+      <div id="article-nav-older" class="card-item">
+        <article>
+          
+          <a class="card-link article-nav-link" href="/2020/hello-world/"></a>
+          <strong class="article-nav-caption">Older</strong>
+          <p class="article-nav-title">
+            
+              Hello World
+            
+          </p>
+        </article>
+      </div>
+    
+  </div>
+</nav>
+
+      </div>
+      
+      
+
+  
+  <div class="valine-container">
+    <div id="valine_thread" class="valine-thread"></div>
+  </div>
+
+  
+  
+
+
+    </div>
+  </article>
+</div>
+
+    <!-- footer container -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+    <p>&copy; 2020 <a href="/" target="_blank">Westrel Xylographer</a></p>
+
+    
+      <p id="hitokoto"></p>
+      <script src="https://v1.hitokoto.cn/?c=a&amp;encode=js&select=%23hitokoto" defer></script>
+    
+
+    
+
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank">flex-block</a></p>
+  </div>
+</footer>
+  </div>
+
+  
+  
+
+
+  <!-- aplayer 音频 start -->
+  
+<link rel="stylesheet" href="/lib/APlayer.min.css">
+
+  
+<script src="/lib/APlayer.min.js"></script>
+
+  <script type="text/javascript">
+    const aplayer = document.querySelectorAll(".aplayer");
+    aplayer && initaplayer(aplayer);
+    function initaplayer(els) {
+      let elsArr = Array.from(els);
+      elsArr.forEach(el => {
+        new APlayer({
+          container: el,
+          audio: { ...el.dataset },
+          theme: "#b7daff",
+          lrcType: 3,
+          autoplay: false,
+          loop: false,
+          mutex: true,
+        });
+      });
+    }
+  </script>
+  <!-- aplayer 音频 end -->
+  
+
+<!-- dplayer 视频 start -->
+
+<link rel="stylesheet" href="/lib/DPlayer.min.css">
+
+
+<script src="/lib/DPlayer.min.js"></script>
+
+<script type="text/javascript">
+  const dplayer = document.querySelectorAll(".dplayer");
+  dplayer && initDPlayer(dplayer);
+  function initDPlayer(els) {
+    let elsArr = Array.from(els);
+    elsArr.forEach(el => {
+      let url = el.dataset.url;
+      let cover = el.dataset.cover;
+      new DPlayer({
+        container: el,
+        video: { url: url, pic: cover },
+        theme: "#b7daff",
+        autoplay: false,
+        loop: false,
+        mutex: true,
+      });
+    });
+  }
+</script>
+<!-- dplayer 视频 end -->
+
+
+<!-- waterfall 瀑布流 start -->
+
+<script src="/lib/waterfall.min.js"></script>
+
+<script type="text/javascript">
+
+const waterfalls = document.querySelectorAll(".waterfall-container");
+
+if (waterfalls && waterfalls.length > 0) {
+  waterfalls.forEach((waterfall, index) => {
+    let cls = "waterfall-container-" + index;
+    waterfall.classList.add(cls);
+    initWaterfall(cls, waterfall);
+  });
+}
+
+function initWaterfall(selector, el) {
+  const options = {};
+  if (Object.keys(el.dataset).length > 0) {
+    for (let k in el.dataset) {
+      options[k] = el.dataset[k];
+    }
+  }
+  waterfall(`.${selector}`, options);
+}
+</script>
+<!-- waterfall 瀑布流 end -->
+
+
+  <!-- zoom start -->
+  
+<script src="/lib/zoom.min.js"></script>
+
+  <script type="text/javascript">
+    document.querySelector(".article-content") && zoom(".article-content");
+  </script>
+  <!-- zoom end -->
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+<script src="/js/script.js"></script>
+
+  
+  <!-- 尾部用户自定义相关内容 -->
+
+</body>
+</html>
