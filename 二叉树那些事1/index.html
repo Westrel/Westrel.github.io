@@ -221,6 +221,21 @@
 <nav class="card-container card-article-nav">
   <div class="card-wrap">
     
+      <div id="article-nav-newer" class="card-item img">
+        <article>
+          
+            <div class="card-cover" style="background-image: url(../images/manonpyramid/pyramid.jpg)"></div>
+          
+          <a class="card-link article-nav-link" href="/%E7%AB%99%E5%9C%A8%E9%87%91%E5%AD%97%E5%A1%94%E9%A1%B6%E5%B0%96%E7%9A%84%E7%94%B7%E4%BA%BA/"></a>
+          <strong class="article-nav-caption">Newer</strong>
+          <p class="article-nav-title">
+            
+              站在金字塔顶尖的男人
+            
+          </p>
+        </article>
+      </div>
+    
     
       <div id="article-nav-older" class="card-item">
         <article>
@@ -294,8 +309,8 @@
           audio: { ...el.dataset },
           theme: "#b7daff",
           lrcType: 3,
-          autoplay: false,
-          loop: false,
+          autoplay: true,
+          loop: true,
           mutex: true,
         });
       });
@@ -323,8 +338,8 @@
         container: el,
         video: { url: url, pic: cover },
         theme: "#b7daff",
-        autoplay: false,
-        loop: false,
+        autoplay: true,
+        loop: true,
         mutex: true,
       });
     });

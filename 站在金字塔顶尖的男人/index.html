@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  
+    <meta name="description" content="Designed by Wx">
+  
+
+  
+    <meta name="keywords" content="由列表掉落关键词">
+  
+
+  
+    <meta name="author" content="Westrel Xylographer">
+  
+
+  
+
+  
+
+  <title>站在金字塔顶尖的男人 | 你是光</title>
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <link href="https://cdn.bootcss.com/highlight.js/9.15.6/styles/monokai.min.css" rel="stylesheet">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+  <div class="root-container">
+    <!-- navbar -->
+<nav class="navbar">
+  <div class="navbar-content">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <a href="/">
+        
+          你是光
+        
+      </a>
+    </div>
+    <!-- link -->
+    <div class="navbar-link">
+      <div class="navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-list">
+        
+          <li class="navbar-list-item"><a href="/">首页</a></li>
+        
+          <li class="navbar-list-item"><a href="/categories">目录</a></li>
+        
+          <li class="navbar-list-item"><a href="/about">关于</a></li>
+        
+          <li class="navbar-list-item"><a href="/links">友链</a></li>
+        
+          <li class="navbar-list-item"><a href="/tags">标签</a></li>
+        
+          <li class="navbar-list-item"><a href="/messages">留盐</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    
+<!-- header container -->
+<header class="header-container post">
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="header-content">
+      <div class="post-image" style="background-image: url(../images/manonpyramid/pyramid.jpg)"></div>
+      <div class="post-text">
+        <div class="type-wrap">
+          <a class="article-category-link" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
+        </div>
+        <h1 class="title-wrap">站在金字塔顶尖的男人</h1>
+        <h2 class="title-sub-wrap">
+          <strong>Westrel Xylographer</strong>
+          <span>发布于</span>
+          
+  <a href="javascript:;" class="article-date">
+    <time datetime="2020-03-10T09:09:27.000Z" itemprop="datePublished">2020-03-10</time>
+  </a>
+
+        </h2>
+      </div>
+    </div>
+  
+
+  
+  
+
+  </header>
+
+    <!-- 文章 -->
+
+<!-- 文章内容 -->
+
+<div class="body-container">
+  <article class="content-container article-container">
+    <div class="article-content">
+      
+      
+
+      <div class="article-entry">
+        <p>在前两篇我们都有提到当上CEO，赢取白富美，走向人生巅峰blablabla…嗯，你的想法成功激起了我的兴趣，我决定好好一下这个人生巅峰–的巅峰。</p>
+<p>前段时间回顾了一下人民的名义，发现那些在官场上混的人物大都想沿着这么一条轨迹进步：普通党员-&gt;科级干部-&gt;处级干部-&gt;局级干部-&gt;厅级干部-&gt;部级干部etc.越往上人数越少级别/能力越大。我们可以想象，这样的结构是怎样一步步形成的。不拿近代举例子，说说历史。我最想举的例子是朱元璋，最初他只是一个生于八月初八的小乞丐，连个名字都么得，但是后来他一步步从起义军头目坐到皇帝的位置。他地位一步步提高的轨迹十分像我们今天要说的主题：<b>堆</b>。</p>
+<h1 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h1><p><a href="[https://baike.baidu.com/item/%E5%A0%86/20606834?fr=aladdin](https://baike.baidu.com/item/堆/20606834?fr=aladdin)">堆</a>是一个可以被看成完全二叉树结构的数组对象。堆分为大顶堆和小顶堆，大顶堆是堆顶元素是堆中全部元素的最大值，且堆顶元素的左右子树也为大顶堆，小顶堆同样，堆顶是最小值，堆顶元素的左右子树都为小顶堆。在本文当中，所有未指明的堆都默认为大顶堆。</p>
+<p>光看定义的话感觉堆是一个二叉树结构，但实际上，堆的是以数组的形式存储数据的。能够用完全二叉树来形象表示堆的原因是，完全二叉树的节点是连续的，它与完美二叉树只差最后一层的若干节点。</p>
+<p><img src="../images/manonpyramid/heap1.png" alt="完全二叉树1" title="完全二叉树1" style="zoom:30%;" /> <img src="../images/manonpyramid/heap2.png" alt="完全二叉树2" title="完全二叉树2" style="zoom:30%;" /></p>
+<p>从图中我们可以看出，如果根节点为0，那么第i个节点的左右子节点分别为2i+1和2i+2，父节点为i/2-1；如果根节点为1，那么第i个节点的子节点为2i和2i+1，父节点为i/2。这个结论在后面要用到哦，不过就算不记得，稍微推导一下就出来了吧？</p>
+<p>堆的每一个节点都象征着对下面的元素的完全的压倒性。我们构造出堆这种数据结构的目的就算为了找出所有元素的最值。那么，在我们去取元素之前，我们得先保证这是一个堆。开始写代码吧~</p>
+<h1 id="C实现"><a href="#C实现" class="headerlink" title="C实现"></a>C实现</h1><p>考虑到堆的结构，我们肯定需要一个数组来保证堆元素。在c语言里由于声明数组时需要指定长度，所以我们定义一个最大容量，同时为了方便操作我们也定义一个当前堆容量。最后定义一个布尔变量来确认这是一个大顶堆还是小顶堆。</p>
+<h2 id="定义结构体"><a href="#定义结构体" class="headerlink" title="定义结构体"></a>定义结构体</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">typedef</span> <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">X</span>&#123;</span><br>	ElementType *data;				<br>	<span class="hljs-keyword">int</span> length;<br>	<span class="hljs-keyword">int</span> max_size;<br>	<span class="hljs-keyword">bool</span> max_heap;<br>&#125; Heap;<br></code></pre></td></tr></table></figure>
+
+<p>由于事先不知道堆有多大，所以数组我们就只声明了头指针，创建时要为它单独分配空间。</p>
+<h2 id="相关函数"><a href="#相关函数" class="headerlink" title="相关函数"></a>相关函数</h2><h3 id="创建堆"><a href="#创建堆" class="headerlink" title="创建堆"></a>创建堆</h3><p>首先是<b>创建堆</b>，我们返回一个指向堆的指针变量表示这是我们需要的。我指定一个max_size和是否为最大堆max_heap，如果max_size比0小则创建事先指定好的大小的数组。剩下大多数操作都很常规，赋值啥的。但是这里有一个小细节，就是数组初始化的时候，如果是大顶堆我就把data[0]赋为事先指定的最大值，其余值指定为指定好的最小值，如果是小顶堆则相反。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-function">Heap *<span class="hljs-title">createHeap</span><span class="hljs-params">(<span class="hljs-keyword">int</span> max_size, <span class="hljs-keyword">bool</span> max_heap)</span></span>&#123;<br>	Heap *heap;<br>	<span class="hljs-keyword">int</span> i;<br>	heap = (Heap*) <span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(Heap));<br>	heap-&gt;length = <span class="hljs-number">0</span>;<br>	heap-&gt;max_heap = max_heap;<br>	<span class="hljs-keyword">if</span>(max_size&gt;<span class="hljs-number">0</span>)<br>		heap-&gt;max_size = max_size; <br>	<span class="hljs-keyword">else</span><br>		heap-&gt;max_size = MAX_SIZE;<br>	heap-&gt;data = (ElementType*) <span class="hljs-built_in">malloc</span>(heap-&gt;max_size*(<span class="hljs-keyword">sizeof</span>(ElementType)));<br>	heap-&gt;length = <span class="hljs-number">0</span>;<br>	<span class="hljs-keyword">if</span>(max_heap)&#123;<br>		heap-&gt;data[<span class="hljs-number">0</span>] = MAX_NUM;<br>		<span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>; i&lt;heap-&gt;max_size; i++)&#123;<br>			heap-&gt;data[i] = MIN_NUM;<br>		&#125;<br>	&#125;<br>	<span class="hljs-keyword">else</span>&#123;<br>		heap-&gt;data[<span class="hljs-number">0</span>] = MIN_NUM;<br>		<span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>; i&lt;heap-&gt;max_size; i++)<br>			heap-&gt;data[i] = MAX_NUM;<br>	&#125;<br>	<span class="hljs-keyword">return</span> heap;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>大多数的操作都是将data[0]设为最大或者最小值作为标兵，不算堆中元素以提高后续的效率，这很好理解(不能理解的同学继续往下看)。但是其余值赋为最小或者最大值是为什么呢？此处按住不表，听我后续分解。</p>
+<p>这个函数写到这了，如果我需要创建一个堆，就只需要用先前定义的结构体Heap声明一个指针*heap，然后调用该方法为它初始化即可。</p>
+<p>关键在于堆的<b>增删</b>操作！</p>
+<h3 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h3><p>想一想，堆的插入应该怎么进行？我们有一个现成的大顶堆，现在来了一个元素，由于程序没法一眼看出这个元素应该放在哪，于是我们很自然就能想到，放在队尾嘛。从二叉树上来看，完全二叉树在最后一个元素的右边再插一个元素很显然还是完全二叉树；从数组来看，把新来的数据放在最后一个位置也是很自然的事情。那么问题来了，我怎么保证我插入之后这还是个大顶堆呢？</p>
+<p>假设你刚进入一家公司，由于你刚进，干的是最底层的活。你的上司能力值没有你高，地位却在你之上。于是你不服气，跟他说，你给我下来。你的上司很生气，但是没办法，你能力比他强嘛。于是他战战兢兢地接下你的工作，而你坐上了他的位置。但是你发现现在的上司能力值仍然没有你高，于是你又对他做了同样的事情…你就这样官越做越大，直到你发现，你现在的上司的能力值终于比你高了，有眼力见的你知趣地闭了嘴，老老实实呆在换了好几级的位置上。</p>
+<p>我们的插入也是可以这样做的：来了一个新元素，插在堆尾，如果他比他的父节点的值要大，那就把他拉下来自己上去，直到碰见了一个能够制衡他的节点。</p>
+<div class="dplayer" data-url='../images/manonhyramid/heap1.mp4' data-cover ></div> 
+
+<p>有了思路之后相关代码就很简单了，下面直接贴出来：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">pushHeap</span><span class="hljs-params">(Heap *heap, ElementType elem)</span></span>&#123;<br>	<span class="hljs-keyword">int</span> i;<br>	<span class="hljs-keyword">switch</span>(heap-&gt;max_heap)&#123;<br>		<span class="hljs-keyword">case</span> <span class="hljs-literal">true</span>:&#123;<br>			<span class="hljs-keyword">if</span>(elem &gt; heap-&gt;data[<span class="hljs-number">0</span>])&#123;<br>				<span class="hljs-built_in">printf</span>(<span class="hljs-string">"大于大顶堆最大值，插入失败！\n"</span>);<br>				<span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>			&#125;<br>			heap-&gt;length ++;<br>			i = heap-&gt;length;<br>			heap-&gt;data[i] = elem;<br>			<span class="hljs-keyword">while</span>(i)&#123;<br>				<span class="hljs-keyword">if</span>(elem &gt; heap-&gt;data[i/<span class="hljs-number">2</span>])&#123;<br>					heap-&gt;data[i] = heap-&gt;data[i/<span class="hljs-number">2</span>];<br>					i /= <span class="hljs-number">2</span>;<br>				&#125;<span class="hljs-keyword">else</span>&#123;<br>					heap-&gt;data[i] = elem;<br>					<span class="hljs-keyword">break</span>;<br>				&#125;<br>			&#125;<br>			<span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>		&#125;<br>		<span class="hljs-keyword">case</span> <span class="hljs-literal">false</span>:&#123;<br>			<span class="hljs-keyword">if</span>(elem &lt; heap-&gt;data[<span class="hljs-number">0</span>])&#123;<br>				<span class="hljs-built_in">printf</span>(<span class="hljs-string">"小于大顶堆最大值，插入失败！\n"</span>);<br>				<span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>			&#125;<br>			heap-&gt;length ++;<br>			i = heap-&gt;length;<br>			heap-&gt;data[i] = elem;<br>			<span class="hljs-keyword">while</span>(i)&#123;<br>				<span class="hljs-keyword">if</span>(elem &lt; heap-&gt;data[i/<span class="hljs-number">2</span>])&#123;<br>					heap-&gt;data[i] = heap-&gt;data[i/<span class="hljs-number">2</span>];<br>					i /= <span class="hljs-number">2</span>;<br>				&#125;<span class="hljs-keyword">else</span>&#123;<br>					heap-&gt;data[i] = elem;<br>					<span class="hljs-keyword">break</span>;<br>				&#125;<br>			&#125;<br>			<span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>		&#125;<br>	&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>但看是大顶堆还是小顶堆还是挺简单的，当然为了确认这一点我们加入了一个switch分支，上下的diamante其实是差不多的，主要区别在大于小于号上。</p>
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><p>由于我们构造堆这一数据结构就是为了获取到他的最大(小)值，所以毫无疑问我们删除的元素只有一个：根节点。那么问题来了，在我们删除根节点之后，余下的数据怎么操作？取左右节点的较大值放在根节点上然后递归操作？可行，但是我们有更容易想到的方法：由于删去根节点之后堆中少了一个元素，所以我们可以干脆就把最后一个元素放上去，然后像插入那样更新，只不过方向是反的：我没有我的下属有能力，所以我“让贤”，直到我的下属没有我的能力强。</p>
+<p>思路很简单，我们放代码：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-function">ElementType <span class="hljs-title">popHeap</span><span class="hljs-params">(Heap *heap)</span></span>&#123;<br>	<span class="hljs-keyword">int</span> i;<br>	ElementType ret, tmp;<br>	<span class="hljs-keyword">if</span>(heap-&gt;length == <span class="hljs-number">0</span>)&#123;<br>		<span class="hljs-built_in">printf</span>(<span class="hljs-string">"堆空\n"</span>);<br>		<span class="hljs-keyword">return</span> heap-&gt;data[<span class="hljs-number">0</span>];<br>	&#125;<br>	ret = heap-&gt;data[<span class="hljs-number">1</span>];<br>	tmp = heap-&gt;data[heap-&gt;length];<br>	heap-&gt;length --;<br>	<span class="hljs-keyword">switch</span>(heap-&gt;max_heap)&#123;<br>		<span class="hljs-keyword">case</span> <span class="hljs-literal">true</span>:&#123;<br>			heap-&gt;data[<span class="hljs-number">1</span>] = heap-&gt;data[i];<br>			i = <span class="hljs-number">1</span>;<br>			<span class="hljs-keyword">while</span>(<span class="hljs-number">2</span>*i &lt;= heap-&gt;length)&#123;<br>				<span class="hljs-keyword">if</span>(tmp &gt; heap-&gt;data[<span class="hljs-number">2</span>*i] &amp;&amp; tmp &gt; heap-&gt;data[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>])<br>					<span class="hljs-keyword">break</span>;<br>				<span class="hljs-keyword">else</span>&#123;<br>					<span class="hljs-keyword">if</span>(heap-&gt;data[<span class="hljs-number">2</span>*i] &gt; heap-&gt;data[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>])&#123;<br>						heap-&gt;data[i] = heap-&gt;data[<span class="hljs-number">2</span>*i];<br>						i = <span class="hljs-number">2</span>*i;<br>					&#125;<span class="hljs-keyword">else</span>&#123;<br>						heap-&gt;data[i] = heap-&gt;data[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>];<br>						i = <span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>;<br>					&#125;<br>				&#125;<br>			&#125;<br>			heap-&gt;data[i] = tmp;<br>			<span class="hljs-keyword">break</span>;<br>		&#125;<br>		<span class="hljs-keyword">case</span> <span class="hljs-literal">false</span>:&#123;<br>			heap-&gt;data[<span class="hljs-number">1</span>] = heap-&gt;data[i];<br>			i = <span class="hljs-number">1</span>;<br>			<span class="hljs-keyword">while</span>(<span class="hljs-number">2</span>*i &lt;= heap-&gt;length)&#123;<br>				<span class="hljs-keyword">if</span>(tmp &lt; heap-&gt;data[<span class="hljs-number">2</span>*i] &amp;&amp; tmp &lt; heap-&gt;data[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>])<br>					<span class="hljs-keyword">break</span>;<br>				<span class="hljs-keyword">else</span>&#123;<br>					<span class="hljs-keyword">if</span>(heap-&gt;data[<span class="hljs-number">2</span>*i] &lt; heap-&gt;data[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>])&#123;<br>						heap-&gt;data[i] = heap-&gt;data[<span class="hljs-number">2</span>*i];<br>						i = <span class="hljs-number">2</span>*i;<br>					&#125;<span class="hljs-keyword">else</span>&#123;<br>						heap-&gt;data[i] = heap-&gt;data[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>];<br>						i = <span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>;<br>					&#125;<br>				&#125;<br>			&#125;<br>			heap-&gt;data[i] = tmp;<br>			<span class="hljs-keyword">break</span>;<br>		&#125;<br>	&#125;<br>	<span class="hljs-keyword">return</span> ret;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>粗略估计一下push和pop的时间复杂度，我们发现都只有O(logN)。这样看来，如果把它写成排序算法的话，时间复杂度只有O(NlogN)，还是蛮不错的一种算法。在那之前，我们有一个想法：拿到一个数组我们不一定需要一个一个push进去，我们能不能一次性把它全部挂上去，然后调整成最大堆呢？</p>
+<h3 id="数组调整为堆"><a href="#数组调整为堆" class="headerlink" title="数组调整为堆"></a>数组调整为堆</h3><p>在动手之前我们先分析一下：我们的思路还是想刚才一样，篡位或者让贤。如果我们从根节点开始让贤，有可能会碰到，我的两个下级能力都没有我高，但是我的下级的下级能力却比我高，单纯让贤的话还需要再“回溯”一下让他们篡位，这样不好，争争斗斗何时休？那我们从最后一个元素开始篡位呢？可以，但是如果两个下属都比上司能力强的话，就可能需要”篡位“两次，这样会增大时间开销。于是，我们忽然灵机一动，可以从最后一个可以让贤的节点开始，往前让贤，这样就会减小一半的开销！</p>
+<p>用正常一点语言来描述一下：从最后一个有子节点的节点开始，向下寻找它应当在的位置，在找到之前不断交换，找到后固定位置，并从出发点继续同样的操作。</p>
+<p>来，让我们实现它：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-function">Heap *<span class="hljs-title">createHeapFromArray</span><span class="hljs-params">(ElementType *arr, <span class="hljs-keyword">int</span> arr_size, <span class="hljs-keyword">int</span> max_size, <span class="hljs-keyword">bool</span> max_heap)</span></span>&#123;<br>	<span class="hljs-keyword">int</span> i, tmp_i;<br>	Heap *heap;<br>	ElementType tmp;<br>	<span class="hljs-keyword">if</span>(arr_size &gt; max_size &amp;&amp; max_size &gt; <span class="hljs-number">0</span>)&#123;<br>		<span class="hljs-built_in">printf</span>(<span class="hljs-string">"最大堆容量小于元素总数\n"</span>);<br>		<span class="hljs-keyword">return</span> <span class="hljs-literal">NULL</span>;<br>	&#125;<br>	heap = createHeap(max_size, max_heap);<br>	<span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>; i&lt;arr_size; i++)&#123;<br>		heap-&gt;length ++;<br>		heap-&gt;data[i+<span class="hljs-number">1</span>] = arr[i];<br>	&#125;<br>	i = (heap-&gt;length) / <span class="hljs-number">2</span>;<br>	<span class="hljs-keyword">switch</span>(max_heap)&#123;<br>		<span class="hljs-keyword">case</span> <span class="hljs-literal">true</span>:&#123;<br>			<span class="hljs-keyword">while</span>(i)&#123;<br>				<span class="hljs-keyword">if</span>(heap-&gt;data[i] &gt;= heap-&gt;data[<span class="hljs-number">2</span>*i] &amp;&amp; heap-&gt;data[i] &gt;= heap-&gt;data[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>])&#123;<br>					i --;<br>					<span class="hljs-keyword">continue</span>;<br>				&#125;<span class="hljs-keyword">else</span>&#123;<br>					tmp = heap-&gt;data[i];<br>					tmp_i = i;<br>					<span class="hljs-keyword">while</span>(<span class="hljs-number">2</span>*tmp_i &lt;= heap-&gt;length)&#123;<br>						<span class="hljs-keyword">if</span>(tmp &gt; heap-&gt;data[<span class="hljs-number">2</span>*tmp_i] &amp;&amp; tmp &gt; heap-&gt;data[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>])<br>							<span class="hljs-keyword">break</span>;<br>						<span class="hljs-keyword">else</span>&#123;<br>							<span class="hljs-keyword">if</span>(heap-&gt;data[<span class="hljs-number">2</span>*tmp_i] &gt; heap-&gt;data[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>])&#123;<br>								heap-&gt;data[tmp_i] = heap-&gt;data[<span class="hljs-number">2</span>*tmp_i];<br>								tmp_i = <span class="hljs-number">2</span>*tmp_i;<br>							&#125;<span class="hljs-keyword">else</span>&#123;<br>								heap-&gt;data[tmp_i] = heap-&gt;data[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>];<br>								tmp_i = <span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>;<br>							&#125;<br>						&#125;<br>					&#125;<br>					heap-&gt;data[tmp_i] = tmp;<br>				&#125;<br>				i --;<br>			&#125;<br>			<span class="hljs-keyword">break</span>;<br>		&#125;<br>		<span class="hljs-keyword">case</span> <span class="hljs-literal">false</span>:&#123;<br>			<span class="hljs-keyword">while</span>(i)&#123;<br>				<span class="hljs-keyword">if</span>(heap-&gt;data[i] &lt;= heap-&gt;data[<span class="hljs-number">2</span>*i] &amp;&amp; heap-&gt;data[i] &lt;= heap-&gt;data[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>])&#123;<br>					i --;<br>					<span class="hljs-keyword">continue</span>;<br>				&#125;<span class="hljs-keyword">else</span>&#123;<br>					tmp = heap-&gt;data[i];<br>					tmp_i = i;<br>					<span class="hljs-keyword">while</span>(<span class="hljs-number">2</span>*tmp_i &lt;= heap-&gt;length)&#123;<br>						<span class="hljs-keyword">if</span>(tmp &lt; heap-&gt;data[<span class="hljs-number">2</span>*tmp_i] &amp;&amp; tmp &lt; heap-&gt;data[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>])<br>							<span class="hljs-keyword">break</span>;<br>						<span class="hljs-keyword">else</span>&#123;<br>							<span class="hljs-keyword">if</span>(heap-&gt;data[<span class="hljs-number">2</span>*tmp_i] &lt; heap-&gt;data[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>])&#123;<br>								heap-&gt;data[tmp_i] = heap-&gt;data[<span class="hljs-number">2</span>*tmp_i];<br>								tmp_i = <span class="hljs-number">2</span>*tmp_i;<br>							&#125;<span class="hljs-keyword">else</span>&#123;<br>								heap-&gt;data[tmp_i] = heap-&gt;data[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>];<br>								tmp_i = <span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>;<br>							&#125;<br>						&#125;<br>					&#125;<br>					heap-&gt;data[tmp_i] = tmp;<br>				&#125;<br>				i --;<br>			&#125;<br>			<span class="hljs-keyword">break</span>;<br>		&#125;<br>	&#125;<br>	<span class="hljs-keyword">return</span> heap;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>核心代码是两个while循环，分别对应着上述的逆序<sub>1</sub>的让贤<sub>2</sub>。外层while直到到达根节点停止，内层while直到找到正确的位置为止。这段代码不难，但是有一个点：当那个真正能力最强的人开始行动的时候，你会发现他的地位不断上升，到了顶端时，此时下标为1，如果再判定，可能到0的位置。所以我们预先放了一个能力最强的boss，没人能越过他，挡住了最厉害的普通人。这就是大家都知道的data[0]标兵的作用。</p>
+<p>我们看着这堆有着<del>选拔出最优秀的男人</del>找出最值的作用，不由得让人想用它进行排排队操作。</p>
+<p>那么，我们的大头来了</p>
+<h1 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h1><p>我们想做的是什么：<b>原地</b>！<b>堆</b>！排序。</p>
+<p>如果只是简单的堆排序，那把上面的内容稍微改一改就可以用了。而我们奉行“拿来主义”，想写好一个接口，日后啥情况直接调用就行，不使用之前定义的堆。</p>
+<p>所以大伙儿注意了，马上公布的这一段代码，只需要定义一个宏</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta"># <span class="hljs-meta-keyword">define</span> ElementType int	<span class="hljs-comment">// 第三个为int、float等可比较的数据类型</span></span><br></code></pre></td></tr></table></figure>
+
+<p>即可<b>拿来使用</b>！</p>
+<p>好的，我们先梳理一下思路：</p>
+<p>1、由于我们想实现的是原地算法，所以刚开始就要借鉴上面的从数组创建堆的思想。</p>
+<p>2、创建完堆之后，不应该把它们pop出来，而是想办法保存起来。因为是原地，所以我们可以用一个巧妙的方法：把堆顶保存到最后一个地方，然后剩余部分重新建堆。这样最大值保存在最后一个元素，第二大保存在倒数第二个元素…到第length-1大的元素的时候，就只剩最后一位了。</p>
+<p>思路非常清晰，但是我们要预先想好可能会出现的情况：</p>
+<p>1、上面的从数组创建堆中，我们会让数组的[0]元素也就是第一个元素设为最大(小)值作为标兵，但是在这个数组里是从0开始的，所以这里跟上面的区别就会有两点：临界问题和子节点下标问题。着重说一下临界问题：除了要注意结束循环即到根节点之后怎么做，还要考虑最后一个有孩子的节点有几个孩子。两个孩子还好，正常比较，如果是一个孩子，那么我们就不能考虑右孩子的值，因为它可能是未初始化的变量等，会对程序造成干扰。</p>
+<p>2、每次“让贤”时，我们的终点是不一样的，这取决于我们进行了多少次“让贤”操作，即队尾保存了多少已排序好的值，所以我们要在程序中增加一个记录当前要处理的堆长度的变量。</p>
+<p>考虑完上述问题之后，我们就可以着手写代码了。具体逻辑见注释，下面直接贴上<b>可以拿来使用</b>的代码：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">arrayHeapSort</span><span class="hljs-params">(ElementType *arr, <span class="hljs-keyword">int</span> arr_size, <span class="hljs-keyword">bool</span> reserve)</span></span>&#123;<span class="hljs-comment">// 原地堆排序 </span><br>	<span class="hljs-keyword">int</span> i = arr_size / <span class="hljs-number">2</span> - <span class="hljs-number">1</span>;	<span class="hljs-comment">// i是从第一个有孩子的结点还是 </span><br>	<span class="hljs-keyword">int</span> len, tmp_i;<br>	ElementType tmp;<br>	<span class="hljs-keyword">if</span>(arr_size &lt;= <span class="hljs-number">1</span>)&#123;<br>		<span class="hljs-built_in">printf</span>(<span class="hljs-string">"无需排序\n"</span>);<br>		<span class="hljs-keyword">return</span>;<br>	&#125;<br>	<span class="hljs-keyword">switch</span>(reserve)&#123;	<br>		<span class="hljs-keyword">case</span> <span class="hljs-literal">false</span>:&#123;	<span class="hljs-comment">// 正序: 构造大顶堆 </span><br>		<span class="hljs-comment">/**<br>		   第一步: 原地构造大顶堆<br>		   **/</span> <br>			<span class="hljs-keyword">while</span>(i+<span class="hljs-number">1</span>)&#123;	<span class="hljs-comment">// 外层循环是从第一个有孩子的结点开始, 每次--, 将当前二叉树构造成大顶堆, 如果到0则最后一次进入循环构造 </span><br>				<span class="hljs-keyword">if</span>(i*<span class="hljs-number">2</span>+<span class="hljs-number">2</span> &lt; arr_size)&#123;	<span class="hljs-comment">// 如果当前节点有右孩子 (一定有左孩子), 则三元素判断 </span><br>					tmp = arr[i];	<span class="hljs-comment">// 保存当前节点</span><br>					tmp_i = i;		<span class="hljs-comment">// 并记住i值 </span><br>					<span class="hljs-keyword">while</span>(<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span> &lt; arr_size)&#123;	<span class="hljs-comment">// 内层循环将当前二叉树构造成大顶堆, 最终找到的tmp_i为i应当在的位置, 终止条件为当前节点为非叶节点</span><br>						<span class="hljs-keyword">if</span>(<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">2</span> &lt; arr_size)&#123;	<span class="hljs-comment">// 有右孩子, 正常判断 </span><br>							<span class="hljs-keyword">if</span>(tmp &gt;= arr[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>] &amp;&amp; tmp &gt;= arr[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">2</span>])&#123;	<span class="hljs-comment">// 如果当前节点大于两个子节点则说明找到tmp_i应当在的位置了 </span><br>								<span class="hljs-keyword">break</span>;<br>							&#125;<span class="hljs-keyword">else</span>&#123;	<span class="hljs-comment">// 否则没有找到, 继续向下寻找, 左右孩子中大节点一定大于当前节点 </span><br>								<span class="hljs-keyword">if</span>(arr[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>] &gt;= arr[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">2</span>])&#123;	<span class="hljs-comment">// 左节点大 </span><br>									arr[tmp_i] = arr[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>];	<span class="hljs-comment">// 大节点挪上来</span><br>									tmp_i = <span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>;	<span class="hljs-comment">// tmp_i移向大节点 </span><br>								&#125;<span class="hljs-keyword">else</span>&#123;	<span class="hljs-comment">// 右节点大</span><br>									arr[tmp_i] = arr[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">2</span>];	<br>									tmp_i = <span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">2</span>;<br>								&#125;<br>							&#125;<br>						&#125;<span class="hljs-keyword">else</span>&#123;	<span class="hljs-comment">// 没右孩子, 则只需判断当前节点与左节点 </span><br>							<span class="hljs-keyword">if</span>(tmp &lt; arr[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>])&#123;	<span class="hljs-comment">// 当前节点小于左节点则交换, 否则找到 </span><br>								arr[tmp_i] = arr[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>];<br>								tmp_i = <span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>;<br>							&#125;<span class="hljs-keyword">else</span>&#123;<br>								<span class="hljs-keyword">break</span>;<br>							&#125;<br>						&#125;<br>					&#125;<br>					<span class="hljs-comment">// 经过内层循环已经找到tmp_i应当的位置, 并且除了应当的位置之外其余的元素都调整好了, 所以这里只需要把tmp移过来即可</span><br>					arr[tmp_i] = tmp; <br>				&#125;<span class="hljs-keyword">else</span>&#123;	<span class="hljs-comment">// 如果当前节点无右孩子, 则二元素判断, 且其左孩子一定为叶节点, 即只需判断当前位置与其左孩子构成的树是否为堆 </span><br>					<span class="hljs-keyword">if</span>(arr[i] &lt; arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>])&#123;	<span class="hljs-comment">// 顺序不对, 调整 </span><br>						tmp = arr[i];<br>						arr[i] = arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>];<br>						arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>] = tmp;<br>					&#125;<span class="hljs-keyword">else</span>&#123;	<span class="hljs-comment">// 顺序对, 则什么也不做 </span><br>						;<br>					&#125;<br>				&#125;<br>				<span class="hljs-comment">// 整个内层循环将arr[i]构造成堆, 此时只需i--</span><br>				i--; <br>			&#125;<br>			<span class="hljs-comment">// 大顶堆构造完成</span><br><span class="hljs-comment">//			printf("\n大顶堆: ");</span><br><span class="hljs-comment">//			for(i=0; i&lt;arr_size; i++)printf("%d ", arr[i]);</span><br>			<span class="hljs-comment">/**<br>			   第二步: 每次将顶部元素与底部元素交换, 并将堆长-1<br>			   **/</span><br>            len = arr_size;<br>            <span class="hljs-keyword">while</span>(len)&#123;	<span class="hljs-comment">// 直到堆中只剩1个元素时停止, 外层循环的作用是不断将大顶堆的顶放入当前堆底 </span><br>				len--;<br>            	tmp = arr[len];<br>            	arr[len] = arr[<span class="hljs-number">0</span>];<br>            	arr[<span class="hljs-number">0</span>] = tmp;	<span class="hljs-comment">// 交换第一个元素与最后一个元素</span><br>            	i = <span class="hljs-number">0</span>;<br>				<span class="hljs-keyword">while</span>(<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span> &lt; len)&#123;	<span class="hljs-comment">// 内层循环的作用是寻找刚移上去的最后一个元素(用i记录下标)的真正位置, 此时堆中除了堆顶全为大顶堆, 终止条件为当前节点为非叶节点, 循环终止时则找到了该元素应当在的位置 </span><br>					<span class="hljs-keyword">if</span>(<span class="hljs-number">2</span>*i+<span class="hljs-number">2</span> &lt; len)&#123;	<span class="hljs-comment">// 如果有右孩子则三元素比较 </span><br>						<span class="hljs-keyword">if</span>(tmp &gt;= arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>] &amp;&amp; tmp&gt;= arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">2</span>])&#123;	<span class="hljs-comment">// 若当前位置最大, 则找到了地方 </span><br>							<span class="hljs-keyword">break</span>;<br>						&#125;<span class="hljs-keyword">else</span>&#123;	<span class="hljs-comment">// 否则左右孩子中大者一定大于当前 </span><br>							<span class="hljs-keyword">if</span>(arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>] &gt;= arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">2</span>])&#123;	<span class="hljs-comment">// 左孩子大 </span><br>								arr[i] = arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>];	<span class="hljs-comment">// 大节点挪上来</span><br>								i = <span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>;	<span class="hljs-comment">// 当前下标指向大节点 </span><br>							&#125;<span class="hljs-keyword">else</span>&#123;	<span class="hljs-comment">// 右孩子大 </span><br>								arr[i] = arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">2</span>];<br>								i = <span class="hljs-number">2</span>*i+<span class="hljs-number">2</span>;<br>							&#125;<br>						&#125;<br>					&#125;<span class="hljs-keyword">else</span>&#123;	<span class="hljs-comment">// 没右孩子则二元素比较 </span><br>						<span class="hljs-keyword">if</span>(tmp &lt; arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>])&#123;	<span class="hljs-comment">// 左孩子大 </span><br>							arr[i] = arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>];<br>							i = <span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>;<br>						&#125;<span class="hljs-keyword">else</span>&#123;	<span class="hljs-comment">// 否则当前位置即为待查位置 </span><br>							<span class="hljs-keyword">break</span>;<br>						&#125;<br>					&#125;<br>				&#125;<br>				<span class="hljs-comment">// 内层循环结束, 当前的i为刚刚移上去的节点的真正位置</span><br>				arr[i] = tmp;<br>			&#125;<br>			<span class="hljs-keyword">return</span>;<br>		&#125;<br>		<span class="hljs-keyword">case</span> <span class="hljs-literal">true</span>:&#123;	<span class="hljs-comment">// 逆序: 构造小顶堆 </span><br>		<span class="hljs-comment">/**<br>		   第一步: 原地构造小顶堆 <br>		   **/</span> <br>			<span class="hljs-keyword">while</span>(i+<span class="hljs-number">1</span>)&#123;<br>				<span class="hljs-keyword">if</span>(i*<span class="hljs-number">2</span>+<span class="hljs-number">2</span> &lt; arr_size)&#123;<br>					tmp = arr[i];<br>					tmp_i = i;<br>					<span class="hljs-keyword">while</span>(<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span> &lt; arr_size)&#123;<br>						<span class="hljs-keyword">if</span>(<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">2</span> &lt; arr_size)&#123;<br>							<span class="hljs-keyword">if</span>(tmp &lt;= arr[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>] &amp;&amp; tmp &lt;= arr[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">2</span>])&#123;<br>								<span class="hljs-keyword">break</span>;<br>							&#125;<span class="hljs-keyword">else</span>&#123;<br>								<span class="hljs-keyword">if</span>(arr[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>] &lt;= arr[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">2</span>])&#123;<br>									arr[tmp_i] = arr[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>];<br>									tmp_i = <span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>;<br>								&#125;<span class="hljs-keyword">else</span>&#123;<br>									arr[tmp_i] = arr[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">2</span>];	<br>									tmp_i = <span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">2</span>;<br>								&#125;<br>							&#125;<br>						&#125;<span class="hljs-keyword">else</span>&#123;<br>							<span class="hljs-keyword">if</span>(tmp &gt; arr[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>])&#123;<br>								arr[tmp_i] = arr[<span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>];<br>								tmp_i = <span class="hljs-number">2</span>*tmp_i+<span class="hljs-number">1</span>;<br>							&#125;<span class="hljs-keyword">else</span>&#123;<br>								<span class="hljs-keyword">break</span>;<br>							&#125;<br>						&#125;<br>					&#125;<br>					arr[tmp_i] = tmp; <br>				&#125;<span class="hljs-keyword">else</span>&#123;<br>					<span class="hljs-keyword">if</span>(arr[i] &gt; arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>])&#123;<br>						tmp = arr[i];<br>						arr[i] = arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>];<br>						arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>] = tmp;<br>					&#125;<span class="hljs-keyword">else</span>&#123;<br>						;<br>					&#125;<br>				&#125;<br>				i--; <br>			&#125;<br>			<span class="hljs-comment">// 小顶堆构造完成</span><br><span class="hljs-comment">//			printf("\n小顶堆: ");</span><br><span class="hljs-comment">//			for(i=0; i&lt;arr_size; i++)printf("%d ", arr[i]);</span><br>			<span class="hljs-comment">/**<br>			   第二步: 每次将顶部元素与底部元素交换, 并将堆长-1<br>			   **/</span><br>            len = arr_size;<br>            <span class="hljs-keyword">while</span>(len)&#123;<br>				len--;<br>            	tmp = arr[len];<br>            	arr[len] = arr[<span class="hljs-number">0</span>];<br>            	arr[<span class="hljs-number">0</span>] = tmp;<br>            	i = <span class="hljs-number">0</span>;<br>				<span class="hljs-keyword">while</span>(<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span> &lt; len)&#123;<br>					<span class="hljs-keyword">if</span>(<span class="hljs-number">2</span>*i+<span class="hljs-number">2</span> &lt; len)&#123;<br>						<span class="hljs-keyword">if</span>(tmp &lt;= arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>] &amp;&amp; tmp&lt;= arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">2</span>])&#123;<br>							<span class="hljs-keyword">break</span>;<br>						&#125;<span class="hljs-keyword">else</span>&#123;<br>							<span class="hljs-keyword">if</span>(arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>] &lt;= arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">2</span>])&#123;<br>								arr[i] = arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>];<br>								i = <span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>;<br>							&#125;<span class="hljs-keyword">else</span>&#123;<br>								arr[i] = arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">2</span>];<br>								i = <span class="hljs-number">2</span>*i+<span class="hljs-number">2</span>;<br>							&#125;<br>						&#125;<br>					&#125;<span class="hljs-keyword">else</span>&#123;<br>						<span class="hljs-keyword">if</span>(tmp &gt; arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>])&#123;<br>							arr[i] = arr[<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>];<br>							i = <span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>;<br>						&#125;<span class="hljs-keyword">else</span>&#123;<br>							<span class="hljs-keyword">break</span>;<br>						&#125;<br>					&#125;<br>				&#125;<br>				arr[i] = tmp;<br>			&#125;<br>			<span class="hljs-keyword">return</span>;<br>		&#125;<br>	&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>咳咳，有点长。写这个的过程真的熬死我，有想听我发牢骚的就看看下面一个大栏，不想听直接划到页尾看源码/笑着哭</p>
+<h1 id="总算可以发牢骚结了TAT"><a href="#总算可以发牢骚结了TAT" class="headerlink" title="总算可以发牢骚结了TAT"></a>总<del>算可以发牢骚</del>结了TAT</h1><p>看完堆之后，我基本上就理解了堆的操作原理，并且有了实现的想法。于是，前面结构体相关的操作很顺利，大概一下午大概花了四个小时就结束了。<b>但是！！！</b>，当我觉得最后一个原地算法思路清晰很简单的时候，我花了6个小时找我的bug：先说说逻辑问题，刚开始我碰到了上面提到的临界问题，最后一个右孩子的节点的比较，后来我想到在堆那里把后面的元素设为最小值可以减少判断分支，但是在原地这里完全不能这样做！因为超出数组范围的元素就不能使用了！所以在这个原地里面我加入了大量的分支，用于判断有几个儿子(放开二胎真的是正确的QAQ)，当然，这在一定程度上增加了开销，不过是线性的，影响不大。另外一个问题是，在判断当前是否大于子节点的时候，刚开始我使用arr[tmp_i]&gt;arr[tmp_i*2+1]等等，这样就忽略了一个问题：前面的操作只是把下面的挪上去，但是我tmp还没有粘贴上去，所以这里应当用tmp&gt;arr[tmp_i*2+1]。这个问题缠了我很久，最终我用了6+2(第二天)个小时解决了这个函数。整体上我连续作战了10个小时(当中吃饭歇了大约20多分钟)，再加上第二天的两个小时，共计半天时间写完了这个400多行的c代码。</p>
+<p>话说回来，我们来分析一下这个算法的效率。首先它是原地算法，空间复杂度为<b>O(1)</b>，而时间上，第一步建堆O(NlogN)，第二步倒序让贤也是O(NlogN)，由于多加了不少判断所以会有线性倍数的时间消耗，在时间复杂度上不影响，所以这个算法的时间复杂度仍然为<b>O(NlogN)</b>。</p>
+<h1 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h1><p>粗略贴一张运行结果的图吧</p>
+<p><img src="../images/manonpyramid/res.png" alt="结果"></p>
+<p>END(下一篇遥遥无期)</p>
+<h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><p><a href="https://www.icourse163.org/course/ZJU-93001?tid=1207006212" target="_blank" rel="noopener">浙江大学数据结构精品MOOC</a></p>
+<p>(没错，这次完全是自己写的，啥都没参考)</p>
+<h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><p>全部C源码点<a href="../download/heap.c" download="这里"/></p>
+
+      </div>
+
+      <div class="article-footer">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">#C</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A0%86/" rel="tag">#堆</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A0%86%E6%8E%92%E5%BA%8F/" rel="tag">#堆排序</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%B6%A3%E8%A7%A3%E7%AE%97%E6%B3%95/" rel="tag">#趣解算法</a></li></ul>
+      </div>
+
+      <div class="article-navs">
+        
+<nav class="card-container card-article-nav">
+  <div class="card-wrap">
+    
+    
+      <div id="article-nav-older" class="card-item img">
+        <article>
+          
+            <div class="card-cover" style="background-image: url(./images/bintree1/1.jpg)"></div>
+          
+          <a class="card-link article-nav-link" href="/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%82%A3%E4%BA%9B%E4%BA%8B1/"></a>
+          <strong class="article-nav-caption">Older</strong>
+          <p class="article-nav-title">
+            
+              二叉树那些事
+            
+          </p>
+        </article>
+      </div>
+    
+  </div>
+</nav>
+
+      </div>
+      
+      
+
+  
+  <div class="valine-container">
+    <div id="valine_thread" class="valine-thread"></div>
+  </div>
+
+  
+  
+
+
+    </div>
+  </article>
+</div>
+
+    <!-- footer container -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+    <p>&copy; 2020 <a href="/" target="_blank">Westrel Xylographer</a></p>
+
+    
+      <p id="hitokoto"></p>
+      <script src="https://v1.hitokoto.cn/?c=a&amp;encode=js&select=%23hitokoto" defer></script>
+    
+
+    
+
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank">flex-block</a></p>
+  </div>
+</footer>
+  </div>
+
+  
+  
+
+
+  <!-- aplayer 音频 start -->
+  
+<link rel="stylesheet" href="/lib/APlayer.min.css">
+
+  
+<script src="/lib/APlayer.min.js"></script>
+
+  <script type="text/javascript">
+    const aplayer = document.querySelectorAll(".aplayer");
+    aplayer && initaplayer(aplayer);
+    function initaplayer(els) {
+      let elsArr = Array.from(els);
+      elsArr.forEach(el => {
+        new APlayer({
+          container: el,
+          audio: { ...el.dataset },
+          theme: "#b7daff",
+          lrcType: 3,
+          autoplay: true,
+          loop: true,
+          mutex: true,
+        });
+      });
+    }
+  </script>
+  <!-- aplayer 音频 end -->
+  
+
+<!-- dplayer 视频 start -->
+
+<link rel="stylesheet" href="/lib/DPlayer.min.css">
+
+
+<script src="/lib/DPlayer.min.js"></script>
+
+<script type="text/javascript">
+  const dplayer = document.querySelectorAll(".dplayer");
+  dplayer && initDPlayer(dplayer);
+  function initDPlayer(els) {
+    let elsArr = Array.from(els);
+    elsArr.forEach(el => {
+      let url = el.dataset.url;
+      let cover = el.dataset.cover;
+      new DPlayer({
+        container: el,
+        video: { url: url, pic: cover },
+        theme: "#b7daff",
+        autoplay: true,
+        loop: true,
+        mutex: true,
+      });
+    });
+  }
+</script>
+<!-- dplayer 视频 end -->
+
+
+<!-- waterfall 瀑布流 start -->
+
+<script src="/lib/waterfall.min.js"></script>
+
+<script type="text/javascript">
+
+const waterfalls = document.querySelectorAll(".waterfall-container");
+
+if (waterfalls && waterfalls.length > 0) {
+  waterfalls.forEach((waterfall, index) => {
+    let cls = "waterfall-container-" + index;
+    waterfall.classList.add(cls);
+    initWaterfall(cls, waterfall);
+  });
+}
+
+function initWaterfall(selector, el) {
+  const options = {};
+  if (Object.keys(el.dataset).length > 0) {
+    for (let k in el.dataset) {
+      options[k] = el.dataset[k];
+    }
+  }
+  waterfall(`.${selector}`, options);
+}
+</script>
+<!-- waterfall 瀑布流 end -->
+
+
+  <!-- zoom start -->
+  
+<script src="/lib/zoom.min.js"></script>
+
+  <script type="text/javascript">
+    document.querySelector(".article-content") && zoom(".article-content");
+  </script>
+  <!-- zoom end -->
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+<script src="/js/script.js"></script>
+
+  
+  <!-- 尾部用户自定义相关内容 -->
+
+</body>
+</html>
